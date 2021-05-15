@@ -62,12 +62,14 @@ body {
     transform: scaleX(0);
     transition: transform 0.5s ease-in-out;
     transform-origin: right;
+    transition-delay: 0.5s;
 }
 
 .container .card:hover .contentBx::before {
     transform: scaleX(1);
     transition: transform 0.5s ease-in-out;
     transform-origin: left;
+    transition-delay: 0s;
 }
 
 .container .card .contentBx {
@@ -82,10 +84,12 @@ body {
     z-index: 1;
     transition: 0.5s;
     transform: translateX(-300px);
+    transition-delay: 0s;
 }
 
 .container .card:hover .contentBx .content {
     transform: translateX(0px);
+    transition-delay: 0.5s;
 }
 
 .container .card .contentBx .content h3 {
